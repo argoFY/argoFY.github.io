@@ -136,7 +136,7 @@ For the second point, one possible reason is that `GetModuleHandleA` assumes the
 The instruction dispatcher is executed through a call instruction. It uses two values to modify its own return address: a 4-byte constant stored at the original return address, and another hardcoded byte constant inside the dispatcher function. By rewriting the return address in this way, it makes the real execution flow after the dispatcher very difficult to follow.
 
 The return address rewriting logic inside the dispatcher works as follows:
-```asm
+```text
 ; Save registers before dispatcher execution
 push regX
 ...
@@ -180,7 +180,7 @@ One example of the control flow shown in IDA is below. It contains many blocks t
 By checking the API calls made by this sample in a sandbox or debugger, it is clear that it performs dynamic API resolution through `GetModuleHandleA` and `GetProcAddress`.
 
 I traced the instructions executed between two `GetProcAddress` calls in x64dbg and removed unrelated instructions such as instruction dispatcher code. This showed the following API resolution and execution flow:
-```asm
+```text
 ; Call into the import dispatcher
 0x0000000180010CD9 call qword ptr ds:[0x000000018001A256]
 
