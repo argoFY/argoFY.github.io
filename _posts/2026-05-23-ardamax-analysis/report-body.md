@@ -328,9 +328,9 @@ As a remaining point, the detailed role of `ALK.exe` was not confirmed in this a
 
 | Type    | Value                  |
 | ------- | ---------------------- |
-| SMTPサーバ | `smtp.mail.yahoo.com`  |
-| SMTPポート | 587                    |
-| メールアドレス | `linux06400@yahoo.com` |
+| SMTP server | `smtp.mail.yahoo.com`  |
+| SMTP port | 587                    |
+| Mail address | `linux06400@yahoo.com` |
 
 ## Registry
 
