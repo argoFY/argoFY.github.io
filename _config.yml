@@ -14,9 +14,9 @@ timezone: Asia/Tokyo
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Zero2One # the main title
+title: argoFY 0.6 # the main title
 
-tagline: Malware Analysis Notes
+tagline: Personal Malware Analysis Notes
 
 description: >- # used by seo meta and the atom feed
   Malware Analysis, Reverse Engineering & Cyber Threat Intelligence.
