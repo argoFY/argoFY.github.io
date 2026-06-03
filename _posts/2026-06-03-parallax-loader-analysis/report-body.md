@@ -426,7 +426,7 @@ The malware executes the entry point of the second PE data extracted from the PN
 
 ![file-20260601225356558.png]({{ "/assets/2026-06-03-parallax-loader-analysis/file-20260601225356558.png" | relative_url }})
 
-# Summary
+# Conclusion
 
 This report analyzed the multi-stage loader logic of the Parallax sample. The sample stores encrypted PE data, shellcode, and a URL for downloading an additional payload in the `.data` section of the initial executable, and decrypts them using XOR with a DWORD key. It then executes the decrypted shellcode and transfers execution to the 2nd stage by injecting a PE into the `mstsc.exe` process.
 
